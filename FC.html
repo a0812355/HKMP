@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hong Kong Marine Professions.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         * {
+            box-sizing: border-box;
+            }
+
+            /* Style the body */
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            }
+
+            /* Header/logo Title */
+            .header {
+            padding: 80px;
+            text-align: center;
+            background: #0497aa;
+            color: white;
+            }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+            font-size: 40px;
+            }
+
+            /* Style the top navigation bar */
+            .navbar {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+            float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .navbar a.active {
+                background-color: #0497aa;
+                color: white;
+                }
+
+            /* Column container */
+            .row {  
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+            -ms-flex: 10%; /* IE10 */
+            flex: 10%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            }
+
+            /* Main column */
+            .main {   
+            -ms-flex: 50%; /* IE10 */
+            flex: 90%;
+            background-color: white;
+            padding: 0px;
+            }
+
+            .center {   
+            -ms-flex: 50%; /* IE10 */
+            flex: 50%;
+            background-color: white;
+            padding: 0px;
+            }
+
+
+            /* Footer */
+            .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+            .row {   
+                flex-direction: column;
+            }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+            }
+
+            .flip-card {
+          width: 800px;
+          height: 500px;
+          perspective: 1000px; /* Add perspective for 3D effect */
+          margin-bottom: 20px;
+        }
+
+        .flip-card-inner {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transform-style: preserve-3d;
+          transition: transform 0.5s;
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg); /* Flip the card on hover */
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          backface-visibility: hidden; /* Hide the backface of the card */
+        }
+
+        .flip-card-front {
+          background-color: #f1f1f1;
+          color: rgb(255, 255, 255);
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .flip-card-back {
+          background-color: #19277a;
+          color: white;
+          transform: rotateY(180deg); /* Initially hide the back of the card */
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .next-card-button {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Hong Kong Marine Professions<h1>
+        <p>by EDUHK</p>
+    </div>
+
+    <div class="navbar">
+        <a href="Home Page.html">Hong Kong Marine Professions</a>
+        <a class="active" href="About the Ocean.html">Fact of the Ocean</a>
+        <a href="HKMP.html">Marine develop in Hong Kong</a> 
+        <a href="Marine professional.html">Marine professional</a>
+        <a href="Test 2.0.html" class="right">Try the Test!</a>
+    </div>
+    <div class="row">
+        <div class="side">
+        </div>
+
+    <div class="main">
+        <div style="width:800px; margin:0 auto;">
+        <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+            <h3><div class="centered">Do you know what determines the sex of sea turtles?</div></h3>
+            </div>
+            <div class="flip-card-back">
+            <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+            <h3><div class="centered">Most species determine sex at fertilization, whereas sea turtles do so afterward. Female or male progeny depends on egg incubation temperature. Male sea turtles hatch from eggs below 27.7°C. At temperatures exceeding 31°C, sea turtle eggs hatch into females. Hatched at moderate temperatures, turtles might be male or female. Scientists believe global warming has affected sea turtle sex ratios. Humans can do much to promote life's natural growth and reproduction.
+            </div></h3>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do you know how long water needs to take so that it can completely flow through the entire Earth?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">It takes about 1,000 years for water to completely flow through the entire Earth.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do you know how many times the world's coastline can circle the equator?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">The total length of the world's coastline is approximately 315,000 miles, which can circle the equator 12 times.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">What is the name of the largest reef on Earth?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">The Great Barrier Reef covers an area bigger than the United Kingdom. It is the biggest living building on Earth and can be seen from space. </div></h3>
+                </div>
+            </div></div>
+        </div>
+
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do you know what is common between seawater and human?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">The concentration of salt and iron contained in seawater is very similar to the concentration of salt and iron in human plasma.
+                </div></h3>
+                </div>
+            </div></div>
+        </div>
+
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do more biological species live on the ground or below the surface of the ocean?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">An estimated 50-80% of Earth's biological species live below the surface of the ocean.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">How much gold can you find under the sea? </div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">The oceans contain nearly 20 million metric tons of gold.</div></h3>
+                </div>
+            </div></div>
+        </div>
+        
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Which animal is the largest on Earth?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">The blue whale is the largest animal on Earth (larger than the largest known dinosaur)and has a heart as big as a small car.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">How come fish isn't as salty as seawater?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">It's true that fish only has a third as much salt as sea water. Like most animals, fish will become dehydrated if they take in too much salt, even if they are in sea water. That's why fish need to drink a lot of water. The fish gets rid of the salt through its lungs or pee after its guts take in water. Because of this, the more salty the water is where they are, the more water they will drink.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do you know what kind of protein human intake the most?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">The largest proportion of global human protein intake is provided by fish.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do you know where do the most of the oxygen comes from?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">Most of the oxygen we breathe comes from the ocean.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do you know what serious problem the ocean is face?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">An incredibly high chance exists that almost 60% of the world's coral reefs will be gone in the next 30 years.</div></h3>
+                </div>
+            </div></div>
+        </div>
+
+        <div class="main">
+            <div style="width:800px; margin:0 auto;">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img class="card-image" src="https://static.vecteezy.com/system/resources/thumbnails/000/273/915/small_2x/ocean-background.jpg" width="800" height="500">
+                <h3><div class="centered">Do you know that Penguins are the masters of love in the ocean?</div></h3>
+                </div>
+                <div class="flip-card-back">
+                <img class="card-image"src="https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-2007091138057-scaled-2048x1280.jpg" width="800" height="500">
+                <h3><div class="centered">Penguins are very dedicated creatures. They seek for their significant other throughout their life. As soon as they locate one, they become intolerant of other penguins. The male penguin will present the female with a smooth pebble as a sign of his affection during the courtship period. The female penguin will carry the stone back to her habitat if she accepts to date. In case the wooing becomes fruitful, the two penguins will often be seen together.</div></h3>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            var flipCards = document.getElementsByClassName("flip-card");
+            var currentIndex = 0;
+        </script>
+    </div>
+</body>
+</html>

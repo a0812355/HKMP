@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <title>Hong Kong Marine Professions.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            * {
+            box-sizing: border-box;
+            }
+
+            /* Style the body */
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            }
+
+            /* Header/logo Title */
+            .header {
+            padding: 80px;
+            text-align: center;
+            background: #0497aa;
+            color: white;
+            }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+            font-size: 40px;
+            }
+
+            /* Style the top navigation bar */
+            .navbar {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+            float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .navbar a.active {
+                background-color: #0497aa;
+                color: white;
+                }
+
+            /* Column container */
+            .row {  
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            }
+
+            /* Main column */
+            .main {   
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+            }
+
+            /* Fake image, just for this example */
+            .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            }
+
+            /* Footer */
+            .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+            .row {   
+                flex-direction: column;
+            }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+            }
+            </style>
+        </head>
+    <body>
+
+        <div class="header">
+            <h1>Hong Kong Marine Professions<h1>
+            <p>by EDUHK</p>
+        </div>
+
+        <div class="navbar">
+            <a class="active" href="Home Page.html">Hong Kong Marine Professions</a>
+            <a href="FC.html">Fact of the Ocean</a>
+            <a href="HKMP.html">Marine develop in Hong Kong</a> 
+            <a href="Marine professional.html">Marine professional</a>
+            <a href="Test 2.0.html" class="right">Try the Test!</a>
+        </div>
+
+        <div class="row">
+        <div class="side">
+                <h2>About Us</h2>
+                <h5>Photo of us:</h5>
+                <img src="photo/EdUHK.jpg" alt="EdUHK" width="350" height="200">
+                <p>We are university students who approach marine literacy from a career perspective and some facts about the ocean to secondary and University students, the importance of loving our ocean.</p>
+                <h3>2023-24S2 GEI4004 (02E) THE OCEAN STORY</h3>
+                <h3>Group G</h3>
+                <h4>Chan Wing Yan 11436620</h4>
+                <h4>Chan Yat Sing 11441766</h4>
+                <h4>Ma Hoi Lam 11439426</h4>
+                <h4>Wong Paak Yan 11441651</h4>
+                <h4>Wong Sum Yu 11384243</h4>
+                    
+        </div>
+        <div class="main">
+            <img src="photo/sea.jpg" alt="Sea" width="800" height="200">
+                <h2>Our Goal</h2>
+                <h5>To protect the Ocean, April 2, 2024</h5>
+                <img src="photo/Sylvia Earle.jpg" alt="Sylvia Earle" width="200" height="200">
+                <h4>“With every drop of water you drink, every breath you take, you’re connected to the sea.” </h4>
+                <p>— Sylvia Earle</p>
+                <p>The ocean plays a crucial role in human life and ocean pollution become a severe global challenge, not only through its significant function in climate regulation, helping to mitigate the effects of climate change, but also as a vital source of food resources. By ensuring the sustainability of these resources, the ocean supports the nourishment and livelihood of countless communities. Furthermore, the global economy is deeply interconnected with the ocean's bounty, with industries such as fishing, tourism, and shipping being fundamental to the economic well-being of millions of people around the world.</p>
+                <p>Marine professionals work tirelessly behind the scenes, making significant contributions to the protection of marine resources and the maintenance of ecological balance. Their efforts have a profound impact on our lives, ensuring the health of our oceans and, by extension, the wellbeing of our planet. Despite their crucial role, many people remain unaware of the specialists in marine fields and the vital work they perform, which is essential for both the environment and our continued prosperity.</p>
+                <br>
+                <h2>Do You Want To Know the Marine Professionals?</h2>
+                <a href="Marine professional.html"><h5>In Hong Kong</h5></a>
+                <a href="Marine professional.html"><h5>Global(Click the link to know more)</h5></a>
+                <h2>Do You Want To Know How Your Personality Is Suitable For Which Marine Professionals?</h2>
+                <a href="Test 2.0.html">Try our PersonalityTest and see which sea creatures you're"</a>
+            </div>
+        </div>
+
+        <div class="footer">
+        <h2>By Eduhk 2023-24S2 GEI4004 (02E) THE OCEAN STORY</h2>
+        </div>
+
+    </body>
+</html>
